@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <inttypes.h>
 #include <stdint.h>
+static const unsigned uint32_t WINDOW_WIDTH = 640, WINDOW_HEIGHT = 480;
 void initGraphics();
-void runProgramLOop();
+void runProgramLoop();
 void cleanProgram();
 int main(void)
 {
@@ -13,7 +14,7 @@ int main(void)
 }
 void initGraphics()
 {
-	InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Bitboardcalc");
+	InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "bitboardcalc");
 	SetTargetFPS(60);
 }
 void runProgramLoop()
